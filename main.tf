@@ -90,9 +90,3 @@ resource "aws_security_group" "alb_sg" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 }
-
-# ECR (Elastic Container Registry) 리포지토리 생성
-# 생성한 ECR에 image push 필요
-resource "aws_ecr_repository" "spring_boot_repo" {
-  name = "spring-boot-app"
-}
